@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Shop Inventory</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>Ice Cream Shop Inventory</h1>
+
+    <div>
+        <h2>Add New Ice Cream</h2>
+        <label for="flavor">Flavor:</label>
+        <input type="text" id="flavor" placeholder="e.g. Vanilla" />
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" placeholder="e.g. 150" />
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" placeholder="e.g. 100" />
+
+        <button onclick="addNewIceCream()">Add Ice Cream</button>
+    </div>
+
+    <div class="output">
+        <h2>Inventory Value</h2>
+        <button onclick="showInventoryValue()">Calculate Total Value</button>
+        <p id="totalValue">Total inventory value: Rupees-0.00</p>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
